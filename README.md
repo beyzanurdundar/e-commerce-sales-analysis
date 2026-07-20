@@ -2,44 +2,112 @@
 
 ## 📌 Project Overview
 
-This project analyzes e-commerce sales data using Python and SQL.
+This project analyzes an online retail dataset to uncover sales trends, customer behavior, and business insights using Python.
 
-The goal is to discover valuable business insights from sales data through data cleaning, exploratory data analysis (EDA), and visualization.
-
----
-
-## 🎯 Objectives
-
-- Analyze sales performance
-- Find top-selling products
-- Identify valuable customers
-- Generate business insights
+The analysis includes data cleaning, exploratory data analysis (EDA), feature engineering, and data visualization.
 
 ---
 
-## 🛠️ Technologies
+## 📂 Dataset
+
+- **Source:** Online Retail II Dataset (UCI Machine Learning Repository)
+- **Rows (before cleaning):** 525,461
+- **Rows (after cleaning):** 400,916
+- **Columns:** 9
+
+---
+
+## 🛠 Technologies
 
 - Python
 - Pandas
-- SQL
+- Matplotlib
 - Jupyter Notebook
+- Git & GitHub
 
 ---
 
-## 📂 Project Structure
+## 📊 Data Cleaning
+
+The following preprocessing steps were applied:
+
+- Removed duplicate records
+- Removed rows with missing Customer ID
+- Removed transactions with negative or zero Quantity
+- Removed transactions with negative or zero Price
+- Created a new feature: **TotalPrice = Quantity × Price**
+
+---
+
+## 📈 Exploratory Data Analysis
+
+The project answers questions such as:
+
+- What are the best-selling products?
+- Which countries generate the highest revenue?
+- Who are the most valuable customers?
+- How is revenue distributed across countries?
+
+---
+
+## 📷 Visualizations
+
+### Top 10 Best Selling Products
+
+![Top Products](images/top_products.png)
+
+---
+
+### Top 10 Countries by Revenue
+
+![Top Countries](images/top_countries.png)
+
+---
+
+### Top 10 Customers by Revenue
+
+![Top Customers](images/top_customers.png)
+
+---
+
+## 📁 Project Structure
 
 ```
 e-commerce-sales-analysis
 │
 ├── data
+│   └── online_retail_II.xlsx
+│
 ├── notebooks
-├── sql
+│   └── analysis.ipynb
+│
 ├── images
+│   ├── top_products.png
+│   ├── top_countries.png
+│   └── top_customers.png
+│
+├── sql
+│
+├── .gitignore
 └── README.md
 ```
 
 ---
 
-## 🚧 Project Status
+## 🚀 Future Improvements
 
-🟢 In Progress 
+- Monthly sales trend analysis
+- RFM customer segmentation
+- SQL analysis queries
+- Interactive Power BI dashboard
+
+---
+
+## 👩‍💻 Author
+
+**Beyzanur Dündar**
+
+Mathematics Student at Marmara University
+
+Aspiring Data Analyst
+
